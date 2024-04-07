@@ -20,7 +20,7 @@ export function Projects() {
                 "/PlotPalette.png",
         },
         {
-            id: 1,
+            id: 3,
             title: "Netflix Clone",
             description:"A Netflix clone project was developed using React.js and Firebase, integrated with the TMDB API",
             className: "md:col-span-2",
@@ -34,7 +34,7 @@ export function Projects() {
             <div className='grid grid-cols-3 p-10' >
 
                 {cards.map((data, index) => (
-                    <Card props={data} />
+                    <Card props={data} key={data.id} />
                 ))}
             </div></>
       

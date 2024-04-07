@@ -3,7 +3,7 @@ import React from "react";
 import { BackgroundBeams } from "../components/ui/background-beams";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
-const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. 
+const words = `Oxygen gets    nsbsbfyou high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. 
 `;
 
 
