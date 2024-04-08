@@ -34,7 +34,7 @@ export function Projects() {
             <div className='grid grid-cols-3 p-10' >
 
                 {cards.map((data, index) => (
-                    <Card props={data} key={data.id} />
+                    <Card {...data} key={data.id} />
                 ))}
             </div></>
       
