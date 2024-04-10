@@ -8,10 +8,12 @@ import { Profiles } from "@/components/Profiles";
 export default function Home() {
   return (
     <>
-      <LandingPage />
-      <Skills />
-      <Profiles/>
-      <Projects />
+      <div className="bg-black" >
+        <LandingPage />
+        <Skills />
+        <Profiles />
+        <Projects />
+      </div>
       <ContactPage />   
     </>
   );

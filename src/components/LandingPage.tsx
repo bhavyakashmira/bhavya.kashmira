@@ -15,9 +15,9 @@ const words = `Frontend developer skilled in React, Node.js, Firebase. Passionat
 export function LandingPage() {
     return (
         <div className="bg-black">
-            <div className="flex  justify-between items-center m-2">
+            <div className="flex justify-between items-center m-2">
             
-                <a href="#">HomePage</a>
+                <a href="#" className="text-white" >HomePage</a>
                 <nav aria-label="Breadcrumb">
                     <ol className="flex items-center gap-1 text-sm text-white">
                         <li>
