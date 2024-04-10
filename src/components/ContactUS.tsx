@@ -6,91 +6,78 @@ export function ContactPage() {
     const words = [
         {
             text: "Click",
-            className: "text-black dark:text-blue-500",
+            className: " text-2xl text-black dark:text-blue-500",
         },
         {
             text: "to",
-            className: "text-black dark:text-blue-500",
+            className: "text-2xl text-black dark:text-blue-500",
         },
         {
             text: "connect",
-            className: "text-black dark:text-blue-500", 
+            className: " text-2xl text-black dark:text-blue-500", 
         },
         {
             text: "with",
-            className: "text-black dark:text-blue-500",
+            className: " text-2xl text-black dark:text-blue-500",
         },
         {
             text: "Me.",
-            className: "text-blue-500 dark:text-blue-500",
+            className: " text-2xl text-blue-500 dark:text-blue-500",
         },
     ];
     return (
-        <> <footer className="bg-white dark:bg-gray-900">
+        <>
+            <footer  id="contact" className="bg-white dark:bg-gray-900">
                 <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             
-                    <div className="flex flex-col items-center justify-center h-[7rem]  ">
+                    <div className="flex flex-col text-4xl items-center justify-center   ">
                         <TypewriterEffectSmooth words={words} />
                     </div>
-                    
-
-                    <p className="mx-auto mt-4 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
-                        itaque neque.
-                    </p>
-
-                    <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+                    <ul className=" flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
                         <li>
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                                href="#"
+                                href=""
                             >
                                 About
                             </a>
                         </li>
 
                         <li>
-                            <a
+                            <a  id="resume"
                                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                                href="#"
+                                href="/last_resume.pdf"
                             >
-                                Careers
+                                Resume
                             </a>
                         </li>
 
                         <li>
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                                href="#"
+                                href="#skills"
                             >
-                                History
+                                Skills
                             </a>
                         </li>
 
                         <li>
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                                href="#"
-                            >
-                                Services
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                                href="#"
+                                href="#projects"
                             >
                                 Projects
                             </a>
                         </li>
 
+                       
+
                         <li>
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                                href="#"
+                                href="#contact"
                             >
-                                Blog
+                                Contact
                             </a>
                         </li>
                     </ul>
@@ -98,36 +85,36 @@ export function ContactPage() {
                     <ul className="mt-12 flex justify-center gap-6 md:gap-8">
                         <li>
                             <a
-                                href="#"
+                                href="https://github.com/bhavyakashmira"
                                 rel="noreferrer"
                                 target="_blank"
                                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                             >
-                                <span className="sr-only">Facebook</span>
+                                <span className="sr-only">GITHUB</span>
                                 <FaGithub size={"32"} />
                             </a>
                         </li>
 
                         <li>
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/bhavyakashmira/"
                                 rel="noreferrer"
                                 target="_blank"
                                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                             >
-                                <span className="sr-only">Instagram</span>
+                                <span className="sr-only">LINKEDIN</span>
                                <FaLinkedin size={"32"} />
                             </a>
                         </li>
 
                         <li>
                             <a
-                                href="#"
+                                href="mailto:bhavyakashmira@gmail.com"
                                 rel="noreferrer"
                                 target="_blank"
                                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                             >
-                                <span className="sr-only">Twitter</span>
+                                <span className="sr-only">Gmail</span>
                                 <SiGmail size={"32"} />
                             </a>
                         </li>

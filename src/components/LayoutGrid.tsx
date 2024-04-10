@@ -6,7 +6,7 @@ import { LayoutGrid } from "../components/ui/layout-grid";
 export function LayoutGridDemo() {
     return (
         <div className="h-screen py-20 w-full">
-            <h1 className="font-bold text-4xl flex justify-center">PROFILES</h1>
+            <h1 className="font-bold text-6xl flex justify-center">PROFILES</h1>
             <LayoutGrid cards={cards} />
         </div>
     );

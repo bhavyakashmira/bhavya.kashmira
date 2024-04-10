@@ -4,13 +4,14 @@ import { ContactPage } from "@/components/ContactUS";
 import { LayoutGridDemo } from "@/components/LayoutGrid";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
+import { Profiles } from "@/components/Profiles";
 
 export default function Home() {
   return (
     <>
       <LandingPage />
       <Skills />
-      <LayoutGridDemo />
+      <Profiles/>
       <Projects />
       <ContactPage />   
     </>
