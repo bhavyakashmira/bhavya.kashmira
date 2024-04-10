@@ -33,13 +33,13 @@ export function Projects() {
        
     ];
     return (
-        <>
-            <h1 id='projects' className="font-bold text-6xl flex justify-center">PROJECTS</h1>
+        <div className='bg-black' >
+            <h1 id='projects' className="  font-bold text-6xl flex justify-center">PROJECTS</h1>
             <div className='md:grid md:grid-cols-3 p-10  ' >
                 {cards.map((data, index) => (
                     <Card {...data} key={data.id} />
                 ))}
-            </div></>
+            </div></div>
       
   )
 }

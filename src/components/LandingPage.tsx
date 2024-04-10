@@ -14,8 +14,8 @@ const words = `Frontend developer skilled in React, Node.js, Firebase. Passionat
 
 export function LandingPage() {
     return (
-        <>
-            <div className="flex bg-black justify-between items-center m-2">
+        <div className="bg-black">
+            <div className="flex  justify-between items-center m-2">
             
                 <a href="#">HomePage</a>
                 <nav aria-label="Breadcrumb">
@@ -85,7 +85,7 @@ export function LandingPage() {
                 <BackgroundBeams />
             </div>
             
-        </>
+        </div>
        
     );
 }

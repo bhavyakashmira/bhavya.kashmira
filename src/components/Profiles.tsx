@@ -2,7 +2,7 @@ import { HoverEffect } from "../components/ui/card-hover-effect";
 
 export function Profiles() {
     return (
-        <div className="max-w-6xl mx-auto px-8">
+        <div className=" bg-black max-w-6xl mx-auto px-8">
             <h1 className="font-bold text-6xl flex justify-center">PROFILES</h1>
             <HoverEffect items={projects} />
         </div>
