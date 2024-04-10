@@ -15,20 +15,18 @@ const words = `Frontend developer skilled in React, Node.js, Firebase. Passionat
 export function LandingPage() {
     return (
         <>
-            <div className="flex justify-between items-center m-2">
+            <div className="flex bg-black justify-between items-center m-2">
             
                 <a href="#">HomePage</a>
                 <nav aria-label="Breadcrumb">
                     <ol className="flex items-center gap-1 text-sm text-white">
                         <li>
                             <a href="/last_resume.pdf" className=" block transition hover:text-gray-700">
-                             
-
                              Resume
                             </a>
                         </li>
 
-                        <li className="rtl:rotate-180">
+                        <li className="">
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-4 w-4"
@@ -70,7 +68,7 @@ export function LandingPage() {
             </div>
         
            
-            <div className="h-[30rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased  ">
+            <div className="m-5 sm:m-0 h-[30rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased  ">
 
                 <div className="" >
                  

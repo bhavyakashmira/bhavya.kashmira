@@ -16,24 +16,24 @@ export function Skills() {
     
         {
             text: "Tech",
-            className: "text-white dark:text-blue-500",
+            className: "text-white ",
         },
         {
             text: "Stacks",
-            className: "text-white dark:text-blue-500",
+            className: "text-white ",
         },
         {
             text: "Under",
-            className: "text-white dark:text-blue-500",
+            className: "text-white ",
         },
         {
             text: "My",
-            className: "text-white dark:text-blue-500",
+            className: "text-white ",
         },
         
         {
             text: "Belt",
-            className: "text-blue-500 dark:text-blue-500",
+            className: "text-blue-500 ",
         },
     ];
     return (

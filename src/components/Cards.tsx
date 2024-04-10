@@ -19,7 +19,7 @@ interface CardProps {
 export function Card({ id, title, description, thumbnail, className,links }: CardProps) {
     return (
         <CardContainer className="inter-var">
-            <CardBody className="bg-black relative group/card dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[23rem] h-auto rounded-xl p-6 border border-bg-white  ">
+            <CardBody className="bg-black relative group/card border-black/[0.1] w-auto sm:w-[23rem] h-auto rounded-xl p-6 border border-bg-white  ">
                 <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-white"
@@ -29,7 +29,7 @@ export function Card({ id, title, description, thumbnail, className,links }: Car
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-sm max-w-sm mt-2 "
                 >
                     {description} 
                     <Link href={links} className="text-white" > <FaExternalLinkAlt size={"12"} /></Link>

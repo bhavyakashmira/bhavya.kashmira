@@ -6,28 +6,28 @@ export function ContactPage() {
     const words = [
         {
             text: "Click",
-            className: " text-2xl text-black dark:text-blue-500",
+            className: " text-2xl text-black ",
         },
         {
             text: "to",
-            className: "text-2xl text-black dark:text-blue-500",
+            className: "text-2xl text-black ",
         },
         {
             text: "connect",
-            className: " text-2xl text-black dark:text-blue-500", 
+            className: " text-2xl text-black ", 
         },
         {
             text: "with",
-            className: " text-2xl text-black dark:text-blue-500",
+            className: " text-2xl text-black ",
         },
         {
             text: "Me.",
-            className: " text-2xl text-blue-500 dark:text-blue-500",
+            className: " text-2xl text-blue-500 ",
         },
     ];
     return (
         <>
-            <footer  id="contact" className="bg-white dark:bg-gray-900">
+            <footer  id="contact" className="bg-white ">
                 <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             
                     <div className="flex flex-col text-4xl items-center justify-center   ">
@@ -36,7 +36,7 @@ export function ContactPage() {
                     <ul className=" flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
                         <li>
                             <a
-                                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                                className="text-gray-700 transition hover:text-gray-700/75  "
                                 href=""
                             >
                                 About
@@ -45,7 +45,7 @@ export function ContactPage() {
 
                         <li>
                             <a  id="resume"
-                                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                                className="text-gray-700 transition hover:text-gray-700/75  "
                                 href="/last_resume.pdf"
                             >
                                 Resume
@@ -54,7 +54,7 @@ export function ContactPage() {
 
                         <li>
                             <a
-                                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                                className="text-gray-700 transition hover:text-gray-700/75  "
                                 href="#skills"
                             >
                                 Skills
@@ -63,7 +63,7 @@ export function ContactPage() {
 
                         <li>
                             <a
-                                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                                className="text-gray-700 transition hover:text-gray-700/75  "
                                 href="#projects"
                             >
                                 Projects
@@ -74,7 +74,7 @@ export function ContactPage() {
 
                         <li>
                             <a
-                                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                                className="text-gray-700 transition hover:text-gray-700/75  "
                                 href="#contact"
                             >
                                 Contact
@@ -88,7 +88,7 @@ export function ContactPage() {
                                 href="https://github.com/bhavyakashmira"
                                 rel="noreferrer"
                                 target="_blank"
-                                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                                className="text-gray-700 transition hover:text-gray-700/75  "
                             >
                                 <span className="sr-only">GITHUB</span>
                                 <FaGithub size={"32"} />
@@ -100,7 +100,7 @@ export function ContactPage() {
                                 href="https://www.linkedin.com/in/bhavyakashmira/"
                                 rel="noreferrer"
                                 target="_blank"
-                                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                                className="text-gray-700 transition hover:text-gray-700/75  "
                             >
                                 <span className="sr-only">LINKEDIN</span>
                                <FaLinkedin size={"32"} />
@@ -112,7 +112,7 @@ export function ContactPage() {
                                 href="mailto:bhavyakashmira@gmail.com"
                                 rel="noreferrer"
                                 target="_blank"
-                                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                                className="text-gray-700 transition hover:text-gray-700/75  "
                             >
                                 <span className="sr-only">Gmail</span>
                                 <SiGmail size={"32"} />
