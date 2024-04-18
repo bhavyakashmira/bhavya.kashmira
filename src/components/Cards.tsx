@@ -41,13 +41,11 @@ export function Card({ id, title, description, thumbnail, className,links }: Car
                         src={thumbnail}
                         height="1000"
                         width="1000"
-                        className="h-60 border border-bg-white hover:border-none  w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        className="h-60 border max-w-sm border-bg-white hover:border-none  w-full object-cover rounded-xl group-hover/card:shadow-xl"
                         alt="thumbnail"
                     />
                 </CardItem>
-                <div className="flex justify-between items-center mt-20">
-            
-                </div>
+               
             </CardBody>
         </CardContainer>
     );

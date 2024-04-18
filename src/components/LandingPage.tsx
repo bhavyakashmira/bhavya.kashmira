@@ -15,11 +15,10 @@ const words = `Frontend developer skilled in React, Node.js, Firebase. Passionat
 export function LandingPage() {
     return (
         <div className="bg-black">
-            <div className="flex justify-between items-center m-2">
-            
-                <a href="#" className="text-white" >HomePage</a>
-                <nav aria-label="Breadcrumb">
-                    <ol className="flex items-center gap-1 text-sm text-white">
+            <div className="flex justify-between h-[5rem] md:h-[3rem] items-center m-2">
+                <a href="#" className="text-[#EDF5FC] font-robot text-xl " >HomePage</a>
+                <nav aria-label="Breadcrumb  ">
+                    <ol className="flex items-center gap-1 font-robot text-2xl text-white">
                         <li>
                             <a href="/last_resume.pdf" className=" block transition hover:text-gray-700">
                              Resume
@@ -68,21 +67,15 @@ export function LandingPage() {
             </div>
         
            
-            <div className="m-5 sm:m-0 h-[30rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased  ">
-
+            <div className=" sm:m-0 h-[50rem] md:h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased ">
                 <div className="" >
-                 
-                    
                 <div className="   max-w-2xl mx-auto p-4">
-                    <div className=" m-10 text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8" >
-                        <TextGenerateEffect className="" words={words} />
-                        </div>                      
-                     
-                    
-                    
+                    <div className=" m-10  font-bold font-landing relative z-20 bg-clip-text text-transparent text-wrap  bg-gradient-to-b from-neutral-200 to-neutral-500 py-8" >
+                     <TextGenerateEffect className="" words={words} />
+                </div> 
                 </div>
                 </div>
-                <BackgroundBeams />
+                <div><BackgroundBeams /></div>
             </div>
             
         </div>

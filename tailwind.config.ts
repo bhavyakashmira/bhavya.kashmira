@@ -42,7 +42,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    fontFamily: {
+      aladin: ["Aladin"],
+      handwrite: ["Dawning of a New Day"],
+      para: ["Amatic"],
+      robot: ["Roboto"],
+      landing: ["Amethysta"],
+    },
   },
+
   plugins: [addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(

@@ -16,24 +16,24 @@ export function Skills() {
     
         {
             text: "Tech",
-            className: "text-white ",
+            className: "text-white text-3xl font-robot ",
         },
         {
             text: "Stacks",
-            className: "text-white ",
+            className: "text-white text-3xl font-robot ",
         },
         {
             text: "Under",
-            className: "text-white ",
+            className: "text-white text-3xl font-robot ",
         },
         {
             text: "My",
-            className: "text-white ",
+            className: "text-white text-3xl font-robot ",
         },
         
         {
             text: "Belt",
-            className: "text-blue-500 ",
+            className: "text-blue-500 text-3xl font-robot ",
         },
     ];
     return (
@@ -44,7 +44,7 @@ export function Skills() {
         >
             <TypewriterEffect words={words} />
             
-            <div className="flex flex-row sm:flex-row justify-center sm:justify-around flex-wrap mt-4 gap-5 items-center">
+            <div className=" flex-row sm:flex-row justify-center grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 sm:justify-around flex-wrap mt-4 gap-5 items-center">
                 {Frontend_skill.map((image, index) => (
                     <SkillDataProvider
                         key={index}
@@ -56,17 +56,7 @@ export function Skills() {
                 ))}
             </div>
 
-            <div className="flex flex-row sm:flex-row justify-center sm:justify-around flex-wrap mt-4 gap-5 items-center">
-                {Backend_skill.map((image, index) => (
-                    <SkillDataProvider
-                        key={index}
-                        src={image.Image}
-                        width={image.width}
-                        height={image.height}
-                        index={index}
-                    />
-                ))}
-            </div>
+          
         </section>
 
     

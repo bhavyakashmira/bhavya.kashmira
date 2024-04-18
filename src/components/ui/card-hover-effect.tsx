@@ -2,6 +2,7 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -51,9 +52,12 @@ export const HoverEffect = ({
                         )}
                     </AnimatePresence>
                     <Card>
-                        <CardTitle>{item.title}</CardTitle>
-                        <CardDescription>{item.description}</CardDescription>
-                        <img src={item.thumbnail} alt="NO IM" />
+                        <CardTitle className="font-robot text-2xl font-bold  m-1 flex justify-center" >{item.title}</CardTitle>
+                        <div className="border p-2 bg-[#221E22] rounded-lg " >
+                            <CardDescription>{item.description}</CardDescription>
+                            <Image src={item.thumbnail} height={"120"} width={"400"} alt="NO IM" />
+                        </div>
+                        
                     </Card>
                 </Link>
             ))}

@@ -156,6 +156,18 @@ export const Frontend_skill = [
         width: 80,
         height: 80,
     },
+    {
+        skill_name: "Node js",
+        Image: "/node-js.png",
+        width: 80,
+        height: 80,
+    },
+    {
+        skill_name: "Fire base",
+        Image: "/Firebase.png",
+        width: 55,
+        height: 55,
+    },
 ];
 export const Backend_skill = [
     {
