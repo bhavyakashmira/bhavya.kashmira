@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { FaMedium } from "react-icons/fa6";
+import { IconType } from "react-icons";
 
 export const HoverEffect = ({
     items,
@@ -13,16 +15,18 @@ export const HoverEffect = ({
         title: string;
         description: string;
         link: string;
-        thumbnail: string;
+        thumbnail: React.ReactNode; 
     }[];
     className?: string;
 }) => {
     let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+    
+
     return (
         <div
             className={cn(
-                "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+                "grid    grid-cols-5  lg:grid-cols-3  py-10",
                 className
             )}
         >
@@ -30,7 +34,7 @@ export const HoverEffect = ({
                 <Link
                     href={item?.link}
                     key={item?.link}
-                    className="relative group  block p-2 h-full w-full"
+                    className="relative group  block p-2 "
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
                 >
@@ -52,12 +56,9 @@ export const HoverEffect = ({
                         )}
                     </AnimatePresence>
                     <Card>
-                        <CardTitle className="font-robot text-2xl font-bold  m-1 flex justify-center" >{item.title}</CardTitle>
-                        <div className="border p-2 bg-[#221E22] rounded-lg " >
-                            <CardDescription>{item.description}</CardDescription>
-                            <Image src={item.thumbnail} height={"120"} width={"400"} alt="NO IM" />
-                        </div>
-                        
+                        <CardTitle className="font-robot md:text-2xl font-bold  items-center gap-2  m-1 flex justify-center" >
+                            {item.thumbnail} <span className="hidden md:block" > {item.title}</span>
+ </CardTitle>   
                     </Card>
                 </Link>
             ))}
@@ -75,12 +76,12 @@ export const Card = ({
     return (
         <div
             className={cn(
-                "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-white group-hover:border-slate-700 relative z-20",
+                " rounded-2xl   overflow-hidden bg-black md:border md:border-white group-hover:border-slate-700 relative z-20",
                 className
             )}
         >
             <div className="relative z-50">
-                <div className="p-4">{children}</div>
+                <div className=" md:p-4">{children}</div>
             </div>
         </div>
     );

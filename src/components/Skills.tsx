@@ -39,7 +39,7 @@ export function Skills() {
     return (
         <section
             id="skills"
-            className=" bg-black flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-8 sm:py-16 md:py-20 lg:py-24"
+            className=" bg-black flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-8 sm:py-16 md:py-20 lg:py-24 font-bold text-white font-para text-3xl md:text-6xl   "
             style={{ transform: "scale(1)" }}
         >
             <TypewriterEffect words={words} />

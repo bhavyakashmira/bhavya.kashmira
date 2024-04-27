@@ -1,33 +1,23 @@
-"use client";
+"use client"
 import React from "react";
-import { BackgroundBeams } from "../components/ui/background-beams";
-import { TextGenerateEffect } from "../components/ui/text-generate-effect";
-import { RiHome2Line } from "react-icons/ri";
-import { FaGreaterThan } from "react-icons/fa6";
-import Link from "next/link";
-import { GrResume } from "react-icons/gr";
-import hello from "../../public/Hero.png"
+import { Vortex } from "../components/ui/vortex";
 
-
-const words = `Frontend developer skilled in React, Node.js, Firebase. Passionate about problem-solving. Embraces challenges and excels in crafting effective solutions. 
-`;
-
-
-export function LandingPage() {
+export function HomeScreen() {
     return (
-        <div className="bg-black">
-            <div className="flex justify-between h-[4rem] md:h-[3rem] items-center m-2">
+        <>
+            
+            <div className="  flex justify-between h-[4rem] md:h-[3rem] items-center m-2">
                 <a href="#" className="text-[#EDF5FC] font-robot md:text-xl " >HomePage</a>
                 <nav aria-label="Breadcrumb  ">
                     <ol className="flex items-center gap-1 font-robot md:text-2xl text-white">
                         <li>
                             <a href="/last_resume.pdf" className=" block transition hover:text-gray-700">
-                             Resume
+                                Resume
                             </a>
                         </li>
 
                         <li className="">
-                            <svg 
+                            <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-4 w-4"
                                 viewBox="0 0 20 20"
@@ -66,20 +56,33 @@ export function LandingPage() {
                     </ol>
                 </nav>
             </div>
-        
-           
-            <div className=" sm:m-0 h-[50rem] md:h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased ">
-                <div className="" >
-                    <div className="   max-w-2xl mx-auto p-4">
-                        <div className=" m-10  font-bold font-landing relative z-20 bg-clip-text text-transparent text-wrap  bg-gradient-to-b from-neutral-200 to-neutral-500 py-8" >
-                            <TextGenerateEffect className="" words={words} />
-                        </div>
-                    </div>
-                </div>
-                <div><BackgroundBeams /></div>
-            </div>
             
-        </div>
-       
+            <div className="w-[calc(100%-4rem)] mx-auto rounded-md  h-screen overflow-hidden">
+                <Vortex
+                    backgroundColor="black"
+                    rangeY={800}
+                    particleCount={500}
+                    baseHue={120}
+                    className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+                >
+                    <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
+                        Hey, <span className="font-robot">I am bhavya kashmira</span> 
+                    </h2>
+                    <p className="text-white font-robot text-sm md:text-2xl max-w-xl mt-6 text-center">
+                        Crafting captivating user experiences with React, one component at a time.
+                    </p>
+                    <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
+                        <button  className="px-4 py-2 bg-blue-900 hover:bg-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
+                            <a href="/last_resume.pdf" className=" block transition hover:text-gray-700">
+                                RESUME
+                            </a>
+                       
+                        </button>
+                        <button className="px-4 py-2 border border-white rounded-xl  text-white ">contact me</button>
+                    </div>
+                </Vortex>
+            </div>
+        </>
+        
     );
 }

@@ -55,7 +55,7 @@ export const TypewriterEffect = ({
                                     initial={{}}
                                     key={`char-${index}`}
                                     className={cn(
-                                        ` text-black opacity-0 hidden`,
+                                        ` text-black opacity-0 hidden font-bold  font-para text-3xl md:text-6xl    `,
                                         word.className
                                     )}
                                 >
@@ -156,7 +156,7 @@ export const TypewriterEffectSmooth = ({
                 }}
             >
                 <div
-                    className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold"
+                    className="text-xs sm:text-base md:text-xl lg:text-3xl xl:text-5xl font-bold"
                     style={{
                         whiteSpace: "nowrap",
                     }}

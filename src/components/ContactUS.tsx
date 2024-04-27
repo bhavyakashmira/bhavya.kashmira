@@ -6,23 +6,23 @@ export function ContactPage() {
     const words = [
         {
             text: "Click",
-            className: " text-2xl text-black ",
+            className: "font-bold text-black font-para text-3xl md:text-6xl ",
         },
         {
             text: "to",
-            className: "text-2xl text-black ",
+            className: "font-bold text-black font-para text-3xl md:text-6xl ",
         },
         {
             text: "connect",
-            className: " text-2xl text-black ", 
+            className: " font-bold text-black font-para text-3xl md:text-6xl ", 
         },
         {
             text: "with",
-            className: " text-2xl text-black ",
+            className: "font-bold text-black font-para text-3xl md:text-6xl ",
         },
         {
             text: "Me.",
-            className: " text-2xl text-blue-500 ",
+            className: " font-bold text-blue-500 font-para text-3xl md:text-5xl ",
         },
     ];
     return (
