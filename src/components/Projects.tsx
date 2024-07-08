@@ -24,11 +24,11 @@ export function Projects() {
         },
         {
             id: 3,
-            title: "AyurScan",
-            description:"Web based application to identify medicinal herbs through image processing",
+            title: "Twitter",
+            description:"Twitter-like web application built using the MERN stack  React Query for data fetching and state management, and TailwindCSS for styling. ",
             className: "md:col-span-2",
-            thumbnail: "/AyurScan.png",
-            links: "https://github.com/bhavyakashmira/AyurScan"
+            thumbnail: "/Twitter.png",
+            links: "https://twitter-6jt8.onrender.com/login"
         },
        
     ];
