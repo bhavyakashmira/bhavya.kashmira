@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Card } from './Cards'
 
 export function Projects() {
@@ -6,6 +6,14 @@ export function Projects() {
     const cards = [
         {
             id: 1,
+            title: "Author Hub",
+            className: "md:col-span-2",
+            description: "Authorhub is a platform for writers to create, organize, and share stories, connecting readers and authors.",
+            thumbnail: "/AuthorHub.png",
+            links: "https://auth-project-zeta.vercel.app/"
+        },
+        {
+            id: 2,
             title:"Netflix Clone",
             className: "md:col-span-2",
             description: "A Netflix clone project was developed using React.js and Firebase, integrated with the TMDB API",
@@ -13,7 +21,7 @@ export function Projects() {
             links: "https://netflix-clone-seven-bay.vercel.app/"
         },
         {
-            id: 2,
+            id: 3,
             title:"Plot Palette",
             className: "col-span-1 ",
             description: "A social media platform for movie enthusiasts allowing users to like and rate movies.",
@@ -23,7 +31,7 @@ export function Projects() {
             links: "https://plot-palette.vercel.app/"
         },
         {
-            id: 3,
+            id: 4,
             title: "Twitter",
             description:"Twitter-like web application built using the MERN stack  React Query for data fetching and state management, and TailwindCSS for styling. ",
             className: "md:col-span-2",
