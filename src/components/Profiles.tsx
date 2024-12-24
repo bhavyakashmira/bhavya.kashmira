@@ -1,6 +1,6 @@
 import { HoverEffect } from "../components/ui/card-hover-effect";
 import { FaMedium } from "react-icons/fa6";
-import { SiLeetcode, SiCodechef } from "react-icons/si";
+import { SiLeetcode, SiCodechef, SiCodeforces } from "react-icons/si";
 import { FaLinkedinIn , FaGithub } from "react-icons/fa";
 
 export function Profiles() {
@@ -9,7 +9,6 @@ export function Profiles() {
     return (
         <div className="  bg-grid max-w-7xl mx-auto px-8">
             <h1 className="font-bold text-white font-para text-3xl md:text-6xl flex justify-center">PROFILES</h1>
-
             <HoverEffect items={projects} />
         </div>
     );
@@ -30,6 +29,13 @@ export const projects = [
             "A competitive programming platform that hosts coding contests and provides practice problems.",
         link: "https://www.codechef.com/users/bhavy_kashmira",
         thumbnail: <SiCodechef size={"32"} />,
+    },
+    {
+        title: "Codeforces",
+        description:
+            "A competitive programming platform that hosts coding contests and provides practice problems.",
+        link: "https://codeforces.com/profile/bhavyakashmira",
+        thumbnail: <SiCodeforces size={"32"} />,
     },
     {
         title: "Github",

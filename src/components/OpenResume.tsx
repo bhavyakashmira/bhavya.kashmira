@@ -11,7 +11,7 @@ function OpenResume() {
       
        
     <div>
-          <button onClick={handleOpenResume} className="bg-blue-800 p-2 rounded-xl m-3 border-white " > Get Resume</button>
+          <button onClick={handleOpenResume} className="bg-blue-900 p-2 rounded-xl m-3 border-white " > Get Resume</button>
     </div>
   )
 }

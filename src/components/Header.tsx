@@ -73,7 +73,7 @@ const SimpleTabs = () => {
 
     return (
         <div>
-            <TabsHeader tabs={tabs} activeTab={activeTab} onTabClick={handleTabClick} />
+            <TabsHeader  tabs={tabs} activeTab={activeTab} onTabClick={handleTabClick} />
         </div>
     )
 }

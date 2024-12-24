@@ -26,7 +26,7 @@ export const HoverEffect = ({
     return (
         <div
             className={cn(
-                "grid    grid-cols-5  lg:grid-cols-3  py-10",
+                "grid  sm:grid-cols-3  py-10",
                 className
             )}
         >
@@ -56,14 +56,14 @@ export const HoverEffect = ({
                         )}
                     </AnimatePresence>
                     <Card
-                        className="w-full  h-60 flex flex-col items-center justify-between border rounded-lg shadow-lg p-4"
+                        className="w-full bg-gray-900 text-white h-60 flex flex-col items-center justify-between border rounded-lg shadow-lg p-4"
                     >
                         <CardTitle className="font-robot text-xl font-bold flex items-center justify-center">
                             <div className="w-20 h-20 flex items-center justify-center">
                                 {item.thumbnail}
                             </div>
                         </CardTitle>
-                        <div className="hidden  font-robot text-base text-center md:flex flex-col items-center justify-center">
+                        <div className="  font-robot text-base text-center flex flex-col items-center justify-center">
                             <div className="text-sm">{item.description}</div>
                            
                         </div>

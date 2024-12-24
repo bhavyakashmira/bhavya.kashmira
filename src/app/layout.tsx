@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="p-3"><SimpleTabs/></div>
+        <div className="p-3 flex justify-center "><SimpleTabs/></div>
         <div >
           {children}
         </div>

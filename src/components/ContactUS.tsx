@@ -19,7 +19,7 @@ export function ContactPage() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Twitter"
-                                className="text-blue-500 hover:text-white"
+                                className="text-blue-800 hover:text-white"
                             >
                                 <FaXTwitter size={30} />
                             </a>
@@ -30,7 +30,7 @@ export function ContactPage() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
-                                className="text-blue-700 hover:text-white"
+                                className="text-blue-800 hover:text-white"
                             >
                                 <FaLinkedinIn size={30} />
                             </a>
