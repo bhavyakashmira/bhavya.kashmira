@@ -6,10 +6,10 @@ export function Projects() {
     const cards = [
         {
             id: 1,
-            title: "Author Hub",
+            title: "Bookworm",
             className: "md:col-span-2",
-            description: "Authorhub is a platform for writers to create, organize, and share stories, connecting readers and authors.",
-            thumbnail: "/AuthorHub.png",
+            description: "Bookworm is a platform for writers to create, organize, and share stories, connecting readers and authors.",
+            thumbnail: "/Bookworm.png",
             links: "https://auth-project-zeta.vercel.app/"
         },
         {
