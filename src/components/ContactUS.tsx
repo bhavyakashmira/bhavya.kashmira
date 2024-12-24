@@ -1,127 +1,59 @@
 "use client";
 import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
 import { SiGmail } from "react-icons/si";
-import { FaLinkedin ,FaGithub } from "react-icons/fa";
+import { FaLinkedin ,FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 export function ContactPage() {
-    const words = [
-        {
-            text: "Click",
-            className: "font-bold text-black font-para text-3xl md:text-6xl ",
-        },
-        {
-            text: "to",
-            className: "font-bold text-black font-para text-3xl md:text-6xl ",
-        },
-        {
-            text: "connect",
-            className: " font-bold text-black font-para text-3xl md:text-6xl ", 
-        },
-        {
-            text: "with",
-            className: "font-bold text-black font-para text-3xl md:text-6xl ",
-        },
-        {
-            text: "Me.",
-            className: " font-bold text-blue-500 font-para text-3xl md:text-5xl ",
-        },
-    ];
+
+    
     return (
         <>
-            <footer  id="contact" className="bg-white ">
-                <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-            
-                    <div className="flex flex-col text-4xl items-center justify-center   ">
-                        <TypewriterEffectSmooth words={words} />
-                    </div>
-                    <ul className=" flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-                        <li>
+            <footer className="w-full">
+                <div className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+                    
+            <div className="mt-5 flex justify-center space-x-6">
+       
+            <div className='flex m-3 gap-10 justify-center' >
                             <a
-                                className="text-gray-700 transition hover:text-gray-700/75  "
-                                href=""
+                                href="https://x.com/bhavyakashmira"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Twitter"
+                                className="text-blue-500 hover:text-white"
                             >
-                                About
+                                <FaXTwitter size={30} />
                             </a>
-                        </li>
 
-                        <li>
-                            <a  id="resume"
-                                className="text-gray-700 transition hover:text-gray-700/75  "
-                                href="/last_resume.pdf"
-                            >
-                                Resume
-                            </a>
-                        </li>
-
-                        <li>
+                            {/* LinkedIn */}
                             <a
-                                className="text-gray-700 transition hover:text-gray-700/75  "
-                                href="#skills"
+                                href="https://linkedin.com/in/bhavyakashmira"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                                className="text-blue-700 hover:text-white"
                             >
-                                Skills
+                                <FaLinkedinIn size={30} />
                             </a>
-                        </li>
 
-                        <li>
-                            <a
-                                className="text-gray-700 transition hover:text-gray-700/75  "
-                                href="#projects"
-                            >
-                                Projects
-                            </a>
-                        </li>
-
-                       
-
-                        <li>
-                            <a
-                                className="text-gray-700 transition hover:text-gray-700/75  "
-                                href="#contact"
-                            >
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul className="mt-12 flex justify-center gap-6 md:gap-8">
-                        <li>
+                            
                             <a
                                 href="https://github.com/bhavyakashmira"
-                                rel="noreferrer"
                                 target="_blank"
-                                className="text-gray-700 transition hover:text-gray-700/75  "
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                                className="text-blue-800 hover:text-white"
                             >
-                                <span className="sr-only">GITHUB</span>
-                                <FaGithub size={"32"} />
+                                <FaGithub size={30} />
                             </a>
-                        </li>
-
-                        <li>
-                            <a
-                                href="https://www.linkedin.com/in/bhavyakashmira/"
-                                rel="noreferrer"
-                                target="_blank"
-                                className="text-gray-700 transition hover:text-gray-700/75  "
-                            >
-                                <span className="sr-only">LINKEDIN</span>
-                               <FaLinkedin size={"32"} />
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                href="mailto:bhavyakashmira@gmail.com"
-                                rel="noreferrer"
-                                target="_blank"
-                                className="text-gray-700 transition hover:text-gray-700/75  "
-                            >
-                                <span className="sr-only">Gmail</span>
-                                <SiGmail size={"32"} />
-                            </a>
-                        </li>
-
-                    </ul>
+                        </div>
+                    </div>
+                    <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-100">
+                        &copy; {new Date().getFullYear()} bhavyakashmira.
+                    </p>
                 </div>
-            </footer></>
+            </footer>
+        
+        </>
        
     );
 }

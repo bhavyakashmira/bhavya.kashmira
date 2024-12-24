@@ -55,11 +55,20 @@ export const HoverEffect = ({
                             />
                         )}
                     </AnimatePresence>
-                    <Card>
-                        <CardTitle className="font-robot md:text-2xl font-bold  items-center gap-2  m-1 flex justify-center" >
-                            {item.thumbnail} <span className="hidden md:block" > {item.title}</span>
- </CardTitle>   
+                    <Card
+                        className="w-full  h-60 flex flex-col items-center justify-between border rounded-lg shadow-lg p-4"
+                    >
+                        <CardTitle className="font-robot text-xl font-bold flex items-center justify-center">
+                            <div className="w-20 h-20 flex items-center justify-center">
+                                {item.thumbnail}
+                            </div>
+                        </CardTitle>
+                        <div className="hidden  font-robot text-base text-center md:flex flex-col items-center justify-center">
+                            <div className="text-sm">{item.description}</div>
+                           
+                        </div>
                     </Card>
+
                 </Link>
             ))}
         </div>
