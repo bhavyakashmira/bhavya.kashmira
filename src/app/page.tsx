@@ -21,7 +21,7 @@ export default function Home() {
             BHAVYA KASHMIRA
           </h1>
           <p className="text-sm sm:text-base text-gray-300 text-center">
-            Full Stack Web Developer || DSA Enthusiast
+            SDE INTERN | Full Stack Web Developer || DSA Enthusiast
           </p>
           <OpenResume />
         </div>
