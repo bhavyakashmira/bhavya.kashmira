@@ -6,6 +6,14 @@ export function Projects() {
     const cards = [
         {
             id: 1,
+            title: "OpenCruiter",
+            className: "md:col-span-2",
+            description: "OpenCruiter is a platform for users to prepare for their interviews.",
+            thumbnail: "/OpenCruiter.png",
+            links: "https://opencruiter.vercel.app/"
+        },
+        {
+            id: 2,
             title: "Bookworm",
             className: "md:col-span-2",
             description: "Bookworm is a platform for writers to create, organize, and share stories, connecting readers and authors.",
@@ -13,7 +21,7 @@ export function Projects() {
             links: "https://auth-project-zeta.vercel.app/"
         },
         {
-            id: 2,
+            id: 3,
             title:"Netflix Clone",
             className: "md:col-span-2",
             description: "A Netflix clone project was developed using React.js and Firebase, integrated with the TMDB API",
@@ -21,7 +29,7 @@ export function Projects() {
             links: "https://netflix-clone-seven-bay.vercel.app/"
         },
         {
-            id: 3,
+            id: 4,
             title:"Plot Palette",
             className: "col-span-1 ",
             description: "A social media platform for movie enthusiasts allowing users to like and rate movies.",
@@ -31,7 +39,7 @@ export function Projects() {
             links: "https://plot-palette.vercel.app/"
         },
         {
-            id: 4,
+            id:5 ,
             title: "Twitter",
             description:"Twitter-like web application built using the MERN stack  React Query for data fetching and state management, and TailwindCSS for styling. ",
             className: "md:col-span-2",
