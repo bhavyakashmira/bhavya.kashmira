@@ -5,6 +5,8 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  repository_dispatch:
+    types: [file_uploaded]
 
 jobs:
   build:
@@ -24,3 +26,10 @@ jobs:
 
       - name: Run linter
         run: npm run lint
+
+      - name: Pull file from source repo
+        run: |
+          git clone https://x-access-token:${{ secrets.SOURCE_REPO_PAT }}@github.com/bhavyakashmira/bhavyaBlog.git temp-source
+          mkdir -p ./blogs
+          cp -r temp-source/blogs/*.md ./blogs/
+          rm -rf temp-source
