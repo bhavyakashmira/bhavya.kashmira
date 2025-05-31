@@ -8,7 +8,6 @@ export function Profiles() {
     
     return (
         <div className="  bg-grid max-w-7xl mx-auto px-8">
-            <h1 className="font-bold text-white font-para text-3xl md:text-6xl flex justify-center">PROFILES</h1>
             <HoverEffect items={projects} />
         </div>
     );

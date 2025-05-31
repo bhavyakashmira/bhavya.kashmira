@@ -7,8 +7,6 @@ export default function Home() {
   return (
     <>
       <div className="h-[40rem] w-full bg-black   bg-grid-small-white/[0.2]  relative flex flex-col items-center justify-center  ">
-
-        
         <div className="flex flex-col items-center justify-center p-4 m-2 max-w-lg mx-auto space-y-4">
           <Image
             src={'/profile.jpg'}
@@ -25,32 +23,15 @@ export default function Home() {
           </p>
           <OpenResume />
         </div>
-
         <div className="m-10" >
           <img
             src="https://ghchart.rshah.org/bhavyakashmira"
             alt="bhavyakashmira's Github chart"
             className="h-auto w-full max-w-[900px] sm:h-auto md:h-auto lg:max-h-[200px]"
           />
-
         </div>
-        
-        
-        
-
-      
-    
       </div>
-
-      
          <ContactPage/>
-
-
-
-
-
-
-
     </>
   );
 }

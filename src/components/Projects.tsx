@@ -50,7 +50,6 @@ export function Projects() {
     ];
     return (
         <div className='bg-black' >
-            <h1 id='projects' className="font-bold text-white font-para text-3xl md:text-6xl flex justify-center ">PROJECTS</h1>
             <div className='grid grid-cols-1 p-4  lg:ml-10 lg:mr-10  sm:grid-cols-2  lg:grid-cols-3 ' >
                 {cards.map((data, index) => (
                     <Card {...data} key={data.id} />
