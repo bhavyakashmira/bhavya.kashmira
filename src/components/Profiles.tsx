@@ -7,7 +7,7 @@ export function Profiles() {
 
     
     return (
-        <div className="  bg-grid max-w-7xl mx-auto px-8">
+        <div className="bg-grid-white/[0.03] max-w-7xl mx-auto px-8 py-16">
             <HoverEffect items={projects} />
         </div>
     );

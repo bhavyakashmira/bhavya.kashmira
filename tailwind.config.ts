@@ -51,7 +51,7 @@ const config: Config = {
     },
   },
 
-  plugins: [addVariablesForColors,
+  plugins: [addVariablesForColors, require('@tailwindcss/typography'),
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {

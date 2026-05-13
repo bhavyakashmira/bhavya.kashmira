@@ -6,13 +6,14 @@ export type BlogCardProps = {
     description: string;
     date: string;
     tags?: string[];
+    basePath?: string;
 };
 
-export const BlogCard: React.FC<BlogCardProps> = ({ slug, title, description, date, tags }) => {
+export const BlogCard: React.FC<BlogCardProps> = ({ slug, title, description, date, tags, basePath = "blogs" }) => {
     return (
         <li key={slug} className="group">
             <a
-                href={`/blogs/${slug}`}
+                href={`/${basePath}/${slug}`}
                 className="text-xl font-semibold hover:underline underline-offset-4 transition-all"
             >
                 {title}

@@ -2,10 +2,7 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
-import { FaMedium } from "react-icons/fa6";
-import { IconType } from "react-icons";
 
 export const HoverEffect = ({
     items,
